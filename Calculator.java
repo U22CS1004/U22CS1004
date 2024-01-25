@@ -10,7 +10,7 @@ public class Calculator{
         System.out.print("Enter two numbers: \n"); 
         a = input.nextDouble();      
 
-        //Enable the users to select an operator to be able to perform an oeration.
+        //Enable the users to select an operator to be able to perform an operation.
         System.out.print("Select the operator (+, -, *, /, ^): \n");
         operator = input.next().charAt(0);
 
