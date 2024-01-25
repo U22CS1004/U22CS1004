@@ -20,31 +20,30 @@ public class Calculator{
         if (operator == '+'){
             result = a + b;
             System.out.print(a + b);
+        }
+        else if (operator == '-'){
+            result = a - b;
+            System.out.print(a - b);
+        }
+        else if (operator == '*'){
+            result = a * b;
+            System.out.print(a * b);
+        }
+        else if (operator == '/'){
+            //To check if b is not equal to zero, then it perfoms the operation.
+            if (b != 0){
+                result = a / b;
+                System.out.print(a / b);
             }
-            else if (operator == '-'){
-                result = a - b;
-                System.out.print(a - b);
+        else{
+            System.out.print("Can't divide by 0");
             }
-            else if (operator == '*'){
-                result = a * b;
-                System.out.print(a * b);
-            }
-            else if (operator == '/'){
-                //To check if b is not equal to zero, then it perfoms the operation.
-                if (b != 0){
-                    result = a / b;
-                    System.out.print(a / b);
-                }
-                else{
-                    System.out.print("Can't divide by 0");
-                }
-            }
-            else if (operator == '^'){
-                result = Math.pow(a,b);
-                System.out.print(result); 
-                return;
-            }
-            
+        }
+        else if (operator == '^'){
+            result = Math.pow(a,b);
+            System.out.print(result); 
+            return;
+        }   
         else{
             System.out.print("Syntax error ");
         }
