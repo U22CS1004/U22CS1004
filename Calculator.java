@@ -4,14 +4,14 @@ public class Calculator{
     public static void main(String[]args){
         //To create Scanner class to accept the users input.
         Scanner input = new Scanner(System.in);
-        Double a, b, squareRoot, result;
+        Double a, b, result;
         int operator;
 
         System.out.print("Enter two numbers: \n"); 
         a = input.nextDouble();      
 
         //Enable the users to select an operator to be able to perform an oeration.
-        System.out.print("Select the operator (+,-,*,/,^): \n");
+        System.out.print("Select the operator (+, -, *, /, ^): \n");
         operator = input.next().charAt(0);
 
         b = input.nextDouble();
